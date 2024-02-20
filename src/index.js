@@ -48,4 +48,4 @@ const server = http.createServer((request, response) => {
     }
 });
 
-server.listen(4000, () => console.log('Bem-vindo a minha primeira API'));
+server.listen(80, () => console.log('Bem-vindo a minha primeira API'));
