@@ -5,9 +5,9 @@ const bodyParser = require('./Helpers/bodyParser');
 const routes = require('./routes');
 
 const server = http.createServer((request, response) => {
-    //response.setHeader('Access-Control-Allow-Origin', '*');
-    //response.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE');
-    //response.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    response.setHeader('Access-Control-Allow-Origin', '*');
+    response.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE');
+    response.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
     
     const parsedUrl = new URL(`http://localhost:3000${request.url}`);
     
@@ -48,6 +48,4 @@ const server = http.createServer((request, response) => {
     }
 });
 
-//server.listen(3000, () => console.log('Servidor iniciado em http://localhost:3000'));
-
-server.listen(80, () => console.log('Bem-vindo a minha primeira API'));
+server.listen(4000, () => console.log('Bem-vindo a minha primeira API'));
