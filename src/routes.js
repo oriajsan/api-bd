@@ -1,3 +1,4 @@
+import swagger from "swagger-ui-express";
 const userController = require('./controllers/userController');
 
 module.exports = [

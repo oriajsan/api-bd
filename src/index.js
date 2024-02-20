@@ -44,4 +44,6 @@ const server = http.createServer((request, response) => {
     }
 });
 
-server.listen(3000, () => console.log('Servidor iniciado em http://localhost:3000'));
+//server.listen(3000, () => console.log('Servidor iniciado em http://localhost:3000'));
+
+server.listen(80, () => console.log('Bem-vindo a minha primeira API'));
