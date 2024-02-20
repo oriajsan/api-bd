@@ -5,9 +5,9 @@ const bodyParser = require('./Helpers/bodyParser');
 const routes = require('./routes');
 
 const server = http.createServer((request, response) => {
-    response.setHeader('Access-Control-Allow-Origin', '*');
-    response.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE');
-    response.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    //response.setHeader('Access-Control-Allow-Origin', '*');
+    //response.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE');
+    //response.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
     
     const parsedUrl = new URL(`http://localhost:3000${request.url}`);
     
